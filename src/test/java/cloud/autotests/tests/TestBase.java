@@ -34,10 +34,9 @@ public class TestBase {
         AllureAttachments.addPageSource();
         AllureAttachments.addBrowserConsoleLogs();
 
-        Selenide.closeWebDriver();
-
         if (Project.isVideoOn()) {
             AllureAttachments.addVideo(sessionId);
         }
+        Selenide.closeWebDriver();
     }
 }
