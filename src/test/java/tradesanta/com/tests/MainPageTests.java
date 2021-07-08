@@ -14,7 +14,7 @@ public class MainPageTests extends TestBase {
     @Test
     @Owner("iignatov")
     @Severity(SeverityLevel.BLOCKER)
-    @Tag("TS")
+    @Tag("UI")
     @Feature("Main page")
     @Story("Main page content")
     @DisplayName("Successful Main page loading")
@@ -25,7 +25,7 @@ public class MainPageTests extends TestBase {
     @Test
     @Owner("iignatov")
     @Severity(SeverityLevel.BLOCKER)
-    @Tag("TS")
+    @Tag("UI")
     @Feature("Main page")
     @Story("Main page content")
     @DisplayName("Main page console log should not have errors")
@@ -34,24 +34,26 @@ public class MainPageTests extends TestBase {
                 .checkConsoleShouldNotHaveErrors();
     }
 
-    /*@Test
+    @Test
     @Owner("iignatov")
     @Severity(SeverityLevel.BLOCKER)
-    @Tag("TS")
+    @Tag("UI")
     @Feature("Main page")
     @Story("Main page content")
     @DisplayName("Check Main page header")
-    public void mainPageHeaderTest() {
+    public void loginPageHeaderTest() {
         mainPage.openMainPage()
-                .checkMainPageHeader()
-                .checkMenuNames()
-                .checkMenuLinks();
-    }*/
+                .checkPageHeader()
+                .checkHeaderMenuNames()
+                .checkHeaderMenuLinks()
+                .checkHeaderSignUpLink()
+                .checkHeaderSignInLink();
+    }
 
     @Test
     @Owner("iignatov")
     @Severity(SeverityLevel.BLOCKER)
-    @Tag("TS")
+    @Tag("UI")
     @Feature("Main page")
     @Story("Main page content")
     @DisplayName("Check Main page footer")

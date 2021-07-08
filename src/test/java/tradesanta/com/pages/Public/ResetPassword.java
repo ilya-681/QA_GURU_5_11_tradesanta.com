@@ -19,7 +19,7 @@ public class ResetPassword extends AbstractExternalPage{
         return this;
     }
 
-    @Step("Verify that the ResetPassword page is opened")
+    @Step("Check that the ResetPassword page is opened")
     public ResetPassword isResetPasswordOpened() {
         welcomeMsg.shouldBe(Condition.visible);
         return this;

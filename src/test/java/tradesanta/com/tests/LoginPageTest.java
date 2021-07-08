@@ -16,7 +16,7 @@ public class LoginPageTest extends TestBase {
     @Test
     @Owner("iignatov")
     @Severity(SeverityLevel.BLOCKER)
-    @Tag("TS")
+    @Tag("UI")
     @Feature("Login page")
     @Story("Login page content")
     @DisplayName("Successful Login page loading")
@@ -27,7 +27,7 @@ public class LoginPageTest extends TestBase {
     @Test
     @Owner("iignatov")
     @Severity(SeverityLevel.BLOCKER)
-    @Tag("TS")
+    @Tag("UI")
     @Feature("Login page")
     @Story("Login page content")
     @DisplayName("Login page console log should not have errors")
@@ -39,11 +39,11 @@ public class LoginPageTest extends TestBase {
     @Test
     @Owner("iignatov")
     @Severity(SeverityLevel.BLOCKER)
-    @Tag("TS")
-    @Feature("Main page")
-    @Story("Main page content")
-    @DisplayName("Check Main page header")
-    public void mainPageHeaderTest() {
+    @Tag("UI")
+    @Feature("Login page")
+    @Story("Login page content")
+    @DisplayName("Check Login page header")
+    public void loginPageHeaderTest() {
         loginPage.openLoginPage()
                 .checkPageHeader()
                 .checkHeaderMenuNames()
@@ -55,11 +55,11 @@ public class LoginPageTest extends TestBase {
     @Test
     @Owner("iignatov")
     @Severity(SeverityLevel.BLOCKER)
-    @Tag("TS")
-    @Feature("Main page")
-    @Story("Main page content")
-    @DisplayName("Check Main page footer")
-    public void mainPageFooterTest() {
+    @Tag("UI")
+    @Feature("Login page")
+    @Story("Login page content")
+    @DisplayName("Check Login page footer")
+    public void loginPageFooterTest() {
         loginPage.openLoginPage()
                  .checkPageFooter()
                  .checkFooterSocialNetworkLinks()
@@ -71,11 +71,11 @@ public class LoginPageTest extends TestBase {
     }
 
     @Test
-    @Tag("TS")
-    @Feature("Enable Reset password link on the login page")
-    @Story("Reset password")
-    @DisplayName("Verify that Reset password link is enable on the login page ")
-    void verifyResetPasswordLink() {
+    @Tag("UI")
+    @Feature("Login page")
+    @Story("Login page content")
+    @DisplayName("Check Reset password link on the login page ")
+    void resetPasswordLinkTest() {
         loginPage.openLoginPage()
                  .clickToForgotYourPassword();
 

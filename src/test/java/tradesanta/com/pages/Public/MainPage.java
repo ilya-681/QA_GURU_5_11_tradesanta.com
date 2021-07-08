@@ -19,7 +19,7 @@ public class MainPage extends AbstractExternalPage {
         return this;
     }
 
-    @Step("Verify that the main page is opened")
+    @Step("Check that the main page is opened")
     public MainPage isMainPageOpened() {
         welcomeMsg.shouldBe(Condition.visible);
         return this;

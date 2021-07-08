@@ -19,11 +19,11 @@ public class LoginTest extends TestBase {
     @Test
     @Owner("iignatov")
     @Severity(SeverityLevel.BLOCKER)
-    @Tag("TS")
+    @Tag("UI")
     @Feature("Login with username/password")
     @Story("Successful Login")
-    @DisplayName("Successful login with username/password")
-    void successfulAuthByWebWithCredentialsTest() {
+    @DisplayName("Check successful login with username/password")
+    void successfulLoginWithCredentialsTest() {
         loginPage.openLoginPage()
                  .login(App.config.existingUsername(), App.config.existingUsernamePassword());
 
@@ -33,11 +33,11 @@ public class LoginTest extends TestBase {
     @Test
     @Owner("iignatov")
     @Severity(SeverityLevel.BLOCKER)
-    @Tag("TS")
+    @Tag("UI")
     @Feature("Login with username/password")
     @Story("Unsuccessful Login")
-    @DisplayName("Unsuccessful login with wrong password")
-    void unsuccessfulAuthByWebWithWrongPasswordTest() {
+    @DisplayName("Check unsuccessful login with wrong password")
+    void unsuccessfulLoginWithWrongPasswordTest() {
         loginPage.openLoginPage()
                  .login(App.config.existingUsername(), "123456789");
 
@@ -47,11 +47,11 @@ public class LoginTest extends TestBase {
     @Test
     @Owner("iignatov")
     @Severity(SeverityLevel.BLOCKER)
-    @Tag("TS")
+    @Tag("UI")
     @Feature("Login with username/password")
     @Story("Unsuccessful Login")
-    @DisplayName("Unsuccessful login with wrong username")
-    void unsuccessfulAuthByWebWithWrongUsernameTest() {
+    @DisplayName("Check unsuccessful login with wrong username")
+    void unsuccessfulLoginWithWrongUsernameTest() {
         loginPage.openLoginPage()
                  .login("someUserName", App.config.existingUsernamePassword());
 
