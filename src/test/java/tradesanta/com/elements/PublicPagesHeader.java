@@ -16,7 +16,7 @@ public class PublicPagesHeader {
 
     SelenideElement logo = $x("//body//header").$("img[alt='Trade santa – cryptocurrency trading bots']"),
             tradingPairs = $x("//body//header").$(byText("Trading pairs")),
-            about = $x("//body//header").$(byText("About")),
+            contactUs = $x("//body//header").$(byText("Contact us")),
             blog = $x("//body//header").$(byText("Blog")),
             faq = $x("//body//header").$(byText("FAQ")),
             pricing = $x("//body//header").$(byText("Pricing")),
@@ -27,7 +27,7 @@ public class PublicPagesHeader {
     public void isDisplayed() {
         logo.shouldBe(Condition.visible);
         tradingPairs.shouldBe(Condition.visible);
-        about.shouldBe(Condition.visible);
+        contactUs.shouldBe(Condition.visible);
         blog.shouldBe(Condition.visible);
         faq.shouldBe(Condition.visible);
         pricing.shouldBe(Condition.visible);
@@ -38,7 +38,7 @@ public class PublicPagesHeader {
 
     public void checkHeaderMenuNames() {
         tradingPairs.shouldHave(text("Trading pairs"));
-        about.shouldHave(text("About"));
+        contactUs.shouldHave(text("Contact us"));
         blog.shouldHave(text("Blog"));
         faq.shouldHave(text("FAQ"));
         pricing.shouldHave(text("Pricing"));
@@ -46,7 +46,7 @@ public class PublicPagesHeader {
 
     public void checkHeaderMenuLinks() {
         tradingPairs.shouldHave(Condition.href("/crypto-markets"));
-        about.shouldHave(Condition.href("/how-it-works"));
+        contactUs.shouldHave(Condition.href("/contact-us"));
         blog.shouldHave(Condition.href("/blog"));
         faq.shouldHave(Condition.href("/documentation-new"));
         pricing.shouldHave(Condition.href("/pricing"));
