@@ -1,10 +1,10 @@
 package tradesanta.com.elements;
 
-import tradesanta.com.config.App;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
+import tradesanta.com.pages.Links;
 
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Condition.text;
@@ -50,7 +50,7 @@ public class PublicPagesHeader {
         blog.shouldHave(Condition.href("/blog"));
         faq.shouldHave(Condition.href("/documentation-new"));
         pricing.shouldHave(Condition.href("/pricing"));
-        telegramLink.parent().shouldHave(Condition.href(App.config.getTelegrammLink()));
+        telegramLink.parent().shouldHave(Condition.href(Links.TELEGRAM_LINK.getURL()));
     }
 
     @Step("Check header \"Sign in\" link on public pages")

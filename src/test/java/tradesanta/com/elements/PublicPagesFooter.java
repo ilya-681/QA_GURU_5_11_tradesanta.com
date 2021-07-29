@@ -1,8 +1,8 @@
 package tradesanta.com.elements;
 
-import tradesanta.com.config.App;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import tradesanta.com.pages.Links;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
@@ -68,15 +68,15 @@ public class PublicPagesFooter {
     }
 
     public void checkFooterSocialNetworkLinks() {
-        telegramLink.parent().shouldHave(Condition.href(App.config.getTelegrammLink()));
-        facebookLink.parent().shouldHave(Condition.href(App.config.getFacebookLink()));
-        twitterLink.parent().shouldHave(Condition.href(App.config.getTwitterLink()));
-        youtubeLink.parent().shouldHave(Condition.href(App.config.getYoutubeLink()));
+        telegramLink.parent().shouldHave(Condition.href(Links.TELEGRAM_LINK.getURL()));
+        facebookLink.parent().shouldHave(Condition.href(Links.FACEBOOK_LINK.getURL()));
+        twitterLink.parent().shouldHave(Condition.href(Links.TWITTER_LINK.getURL()));
+        youtubeLink.parent().shouldHave(Condition.href(Links.YOUTUBE_LINK.getURL()));
     }
 
     public void checkFooterAppLinks() {
-        iosAppLink.shouldHave(Condition.href(App.config.getIosAppLink()));
-        androidAppLink.shouldHave(Condition.href(App.config.getAndroidAppLink()));
+        iosAppLink.shouldHave(Condition.href(Links.IOS_APP_LINK.getURL()));
+        androidAppLink.shouldHave(Condition.href(Links.ANDROID_APP_LINK.getURL()));
     }
 
     public void checkFooterMenuNames() {
