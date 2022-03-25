@@ -22,12 +22,15 @@ public interface ProjectConfig extends Config {
     @Key("browserSize")
     String browserSize();
 
+    @DefaultValue("")
     @Key("browserMobileView")
     String browserMobileView();
 
+    @DefaultValue("")
     @Key("remoteDriverUrl")
     String remoteDriverUrl();
 
+    @DefaultValue("")
     @Key("videoStorage")
     String videoStorage();
 }
