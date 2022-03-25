@@ -8,9 +8,9 @@ repositories {
     mavenCentral()
 }
 
-def allureVersion = "2.13.9",
-    selenideVersion = "5.22.2",
-    junitVersion = "5.7.1"
+def allureVersion = "2.17.3",
+    selenideVersion = "6.3.5",
+    junitVersion = "5.8.2"
 
 allure {
     version = allureVersion
@@ -24,13 +24,13 @@ allure {
 
 dependencies {
     testImplementation(
-            "org.aspectj:aspectjweaver:1.9.6",
+            "org.aspectj:aspectjweaver:1.9.9",
             "com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
-            "io.rest-assured:rest-assured:4.3.1",
+            "io.rest-assured:rest-assured:4.5.1",
             "io.qameta.allure:allure-rest-assured:$allureVersion",
             "org.aeonbits.owner:owner:1.0.12",
-            "org.assertj:assertj-core:3.19.0",
+            "org.assertj:assertj-core:3.22.0",
             "org.junit.jupiter:junit-jupiter-api:$junitVersion")
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
 }
