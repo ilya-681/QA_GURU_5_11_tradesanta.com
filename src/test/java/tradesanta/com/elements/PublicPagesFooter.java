@@ -32,7 +32,7 @@ public class PublicPagesFooter {
 
             logo = $("#footer").$("img[alt='Trade santa – cryptocurrency trading bots']"),
             cryptoGeek = $("#footer").$("iframe[src='https://cryptogeek.info/tools-widget/tradesanta?view=square&theme=dark&transparent=true']"),
-            copyright = $("#footer").$(".col-lg"),
+            copyright = $("#footer").$(".col-md-auto.col-lg.py-2.small.text-md-right"),
 
     featuresBlock = $("#footer").$(byText("Features")),
             howItWorksMenu = $("#footer").$(byText("How it works")),
@@ -115,7 +115,7 @@ public class PublicPagesFooter {
         disclaimerText.shouldHave(text("At this website, you may access software that enables you to trade and invest in cryptocurrencies " +
                 "by means of an automatic crypto trader bot – of which you solely control. Please consult with our " +
                 "Policies and Disclaimer before starting any trading."));
-        copyright.shouldHave(text("© 2018 - 2021 TradeSanta"));
+        copyright.shouldHave(text("© 2018 - 2022 TradeSanta"));
         socialNetworkLinksBlock.shouldHave(text("Come join us:"));
     }
 }
