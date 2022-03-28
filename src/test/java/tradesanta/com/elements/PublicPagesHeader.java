@@ -48,7 +48,7 @@ public class PublicPagesHeader {
         tradingPairs.shouldHave(Condition.href("/crypto-markets"));
         contactUs.shouldHave(Condition.href("/contact-us"));
         blog.shouldHave(Condition.href("/blog"));
-        faq.shouldHave(Condition.href("/documentation-new"));
+        faq.shouldHave(Condition.href("/faq"));
         pricing.shouldHave(Condition.href("/pricing"));
         telegramLink.parent().shouldHave(Condition.href(Links.TELEGRAM_LINK.getURL()));
     }

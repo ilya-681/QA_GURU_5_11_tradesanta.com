@@ -96,7 +96,7 @@ public class PublicPagesFooter {
         technicalIndicatorsMenu.shouldHave(Condition.href("/technical-indicators"));
         tradingToolsMenu.shouldHave(Condition.href("/trading-tools"));
         exchangesMenu.shouldHave(Condition.href("/exchanges"));
-        faqMenu.shouldHave(Condition.href("/documentation-new"));
+        faqMenu.shouldHave(Condition.href("/faq"));
         changelogMenu.shouldHave(Condition.href("/changelog"));
         referralProgramMenu.shouldHave(Condition.href("/referral-program"));
     }
