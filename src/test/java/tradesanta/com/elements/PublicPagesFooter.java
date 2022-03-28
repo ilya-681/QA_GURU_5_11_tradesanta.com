@@ -29,7 +29,7 @@ public class PublicPagesFooter {
 
             logo = $("#footer").$("img[alt='Trade santa – cryptocurrency trading bots']"),
             cryptoGeek = $("#footer").$("iframe[src='https://cryptogeek.info/tools-widget/tradesanta?view=square&theme=dark&transparent=true']"),
-            copyright = $("#footer").$(".col-md-auto.col-lg.py-2.small.text-md-right"),
+            copyright = $("#footer").$(byText("2018 - 2022 TradeSanta")),
 
     featuresBlock = $("#footer").$(byText("Features")),
             howItWorksMenu = $("#footer").$(byText("How it works")),
