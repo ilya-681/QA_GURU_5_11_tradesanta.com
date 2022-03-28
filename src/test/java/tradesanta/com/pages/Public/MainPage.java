@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class MainPage extends AbstractExternalPage {
 
-    public SelenideElement welcomeMsg = $x("//body").$(byText("Automated Crypto Trading Made Simple"));
+    public SelenideElement welcomeMsg = $x("//body").$(byText("Сrypto trading bots for everyone"));
 
     @Step("Open the main page")
     public MainPage openMainPage() {
