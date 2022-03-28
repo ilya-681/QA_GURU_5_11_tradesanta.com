@@ -22,7 +22,10 @@ public class PublicPagesFooter {
             androidAppLink = $("#footer").$("img[alt='trading bot app on Google Play']").parent(),
 
             termsOfUse = $("#footer").$(byText("Terms of use")),
-            disclaimerText = $("#footer").$(".col-12.py-3.small"),
+            disclaimerText = $("#footer").$(byText("At this website, you may access software" +
+                    " that enables you to trade and invest in cryptocurrencies by means of an automatic crypto trader" +
+                    " bot – of which you solely control. Please consult with our Policies and Disclaimer before" +
+                    " starting any trading.")),
             privacyPolicy = $("#footer").$(byText("Privacy policy")),
             cookiesPolicy = $("#footer").$(byText("Cookies policy")),
             disclaimer = $("#footer").$(byText("Disclaimer")),
